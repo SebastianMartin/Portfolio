@@ -1,0 +1,55 @@
+.SideBarContainer{
+    position: relative;
+    
+}
+.SideBarContainerGrid{
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+
+
+}
+.SideBarContainerLeftColumnBuffer{
+    margin-top: 225%;
+}
+.SideBarContainerLeftColumn{
+    width: 100%;
+    padding: 10%;
+    background-color: var(--blue);
+}
+.SideBarContainerRightColumn{
+    z-index: -1;
+}
+.SideBarUserPicture{
+    padding: 4%;;
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    border-radius: 50%;
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SideBarUserPictureImage{
+    position: absolute;
+    border-radius: 50%;
+    width: 94%;
+    height: 94%;
+    margin-top: -50%;
+  background-position: center;
+    object-fit:cover;
+}
+.SideBarUserPictureBackground{
+    position: absolute;
+  width: 100%;
+  padding-top: 100%;
+  margin-top: 50%;
+  background-color: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
