@@ -1,0 +1,63 @@
+.Card {
+    margin: auto;
+    background-color: transparent;
+    width: 600px;
+    height: 160px;
+    perspective: 1000px;
+    border-radius: 10px;
+    padding-top:10px;
+}
+
+.CardFlip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 3px 10px var(--lightblue);
+    border-radius: 10px;
+    -moz-backface-visibility: hidden;
+    
+}
+
+/* .Card:hover .CardFlip  {
+    transform: rotateY(180deg);
+} */
+.CardFlipper .CardFlip{
+    transform: rotateY(180deg);
+}
+
+.CardFlipFront, .CardFlipBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    border-radius: 10px;
+    
+}
+
+.CardFlipFront {
+    background-color: whitesmoke;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    
+}
+
+.CardFlipBack {
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    
+}
+.CardIsGrid{
+    display: grid;
+    height:100%;
+    margin:0;
+    padding:0;
+    align-items: center;
+}
+
+

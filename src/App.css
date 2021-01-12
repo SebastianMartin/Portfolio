@@ -4,7 +4,9 @@
 }
 :root {
   --gold: #9c8c4e;
-  --blue: #0e1e46;
+  --lightblue: #7d94ce;
+  --darkblue: #092469;
+  --green: #98ff98;
 }
 
 .App-logo {
@@ -24,16 +26,68 @@ p{
   transition: .25s;
 }
 p:hover{
-  color: coral;
+  color: var(--green);
 }
 h1{
   margin:0;
-  background-color: whitesmoke;
   color: var(--blue);
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: calc(10px + 4vmin);
+  font-size: calc(20px + 4vmin);
 }
+h2{
+  margin:0;
+  color: var(--blue);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: calc(20px + 2vmin);
+}
+
+
+.UserTopImage{
+  position: absolute;
+  padding: 1%;
+  width: calc(100px + 12vw);
+  height: calc(100px + 12vw);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+
+.UserTopImageBackground{
+  position: absolute;
+  width: calc(100px + 12vw);;
+  height: calc(100px + 12vw);
+  background-color: whitesmoke;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserTopImageBackgroundImage{
+  border-radius: 50%;
+  width: 94%;
+  height: 94%;
+  object-fit:cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

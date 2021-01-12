@@ -1,0 +1,43 @@
+.Home {
+    width: auto;
+    display:grid;
+    justify-items: center;
+    z-index: 200;
+}
+.Home p, .Home p:hover{
+    color: var(--darkblue);
+    font-size: calc(10px + 1vmin);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+.Home p {
+    margin-bottom: 0px;
+}
+
+.ButtonContainer {
+    width: 600px;
+    
+}
+
+.ToolButtons {
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    cursor: pointer;
+}
+
+.ToolButtonsSelected {
+    pointer-events: none;
+    box-sizing: border-box;
+    border-bottom: solid var(--darkblue) 2px;
+    font-size: 190%;;
+}
+.ToolButtonsSelected p{
+    font-size: 190%;;
+}
+
+
+button:focus {
+    outline: 0;
+}

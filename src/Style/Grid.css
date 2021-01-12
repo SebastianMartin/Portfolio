@@ -1,0 +1,39 @@
+.GridContainer{
+    display: grid;
+    grid-column-gap: 1em;
+    align-items: center;
+    justify-items: center;
+    padding-left:10px;
+    padding-right:10px;
+}
+.Grid2{
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+}
+.Grid4{
+    grid-template-columns: repeat(4,minmax(0, 1fr));
+}
+.Grid5{
+    grid-template-columns: repeat(5,minmax(0, 1fr));
+}
+.Grid6{
+    grid-template-columns: repeat(6,minmax(0, 1fr));
+}
+.GridIconImage{
+    width:100%;
+}
+.GridContainer p, .GridContainer p:hover{
+    color: var(--darkblue);
+    font-size: calc(10px + 1vmin);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+.GridContainerImageContainter{
+    display: grid;
+    align-items: center;
+}
+.GridContainerGridName{
+    padding-bottom: 0px;
+    margin-bottom:0px;
+    
+}

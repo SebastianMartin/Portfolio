@@ -1,0 +1,10 @@
+.Section{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 900px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display:grid;
+    justify-items: center;
+}
